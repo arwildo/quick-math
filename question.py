@@ -2,7 +2,6 @@ import random
 
 
 def quickMath(correct_ct):
-    print("No. {}".format(correct_ct))
     numone = random.randint(0, 100)
     numtwo = random.randint(0, 11)
     result = numone * numtwo
@@ -17,12 +16,12 @@ def quickMath(correct_ct):
 
 
 if __name__ == "__main__":
-    correct_ct = 1
+    correct_ct = 0
 
     print("Solve 3 question break from question loop")
     print()
 
-    while correct_ct < 4:
+    while correct_ct <= 3:
         correct = quickMath()
         print("---------------------------")
 
